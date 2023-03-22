@@ -1,0 +1,115 @@
+@import url('/assets/css/global.css');
+
+h1 {
+    line-height: 1.5;
+}
+h2 {
+    font-size: 1rem;
+}
+
+/* header */
+header {
+    width: 100%;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.logo {
+    width: 5rem;
+    object-fit: contain;
+}
+
+/* main */
+.main {
+    width: 100%;
+    gap: 0;
+
+    color: hsl(243, 87%, 12%);
+}
+section {
+    padding: 5rem 2rem;
+}
+main img {
+    width: 100%;
+    height: 100%;
+}
+/* 1st section */
+input {
+    padding: .5rem;
+}
+::placeholder {
+    color: hsl(0, 0%, 75%);
+}
+/* 2nd section */
+.bg-curve {
+    height: 2rem;
+    background: url('/assets/images/bg-curve-mobile.svg') no-repeat;
+}
+.section-2 {
+    background: hsl(240, 75%, 98%);
+}
+.section-2 a {
+    width: fit-content;
+    margin: 2rem auto;
+    padding-bottom: .5rem;
+
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+a img {
+    width: 1rem;
+    height: 1rem;
+}
+.testimonial {
+    width: 85%;
+    padding: 1rem;
+
+    background-color: white;
+    box-shadow: 0 0 10px hsl(0, 0%, 75%);
+    border-radius: .25rem;
+    font-size: .7rem;
+}
+.testimonial img {
+    width: 1.5rem;
+}
+.avatar {
+    border-radius: 50%;
+}
+
+/* 3rd section */
+.section-3 {
+    padding: 3rem;
+
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(240, 75%, 98%);
+}
+
+/* footer */
+.footer {
+    padding: 4rem 3rem;
+    gap: 2rem;
+
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+}
+.footer .logo {
+    width: 50%;
+    filter: contrast(0) brightness(1.8);
+}
+.footer-container {
+    gap: 3rem;
+}
+a {
+    color: inherit;
+}
+.social-media {
+    align-self: center;
+}
+.social-media i {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .3rem;
+    padding: .5rem;
+
+    border: 1px solid white;
+    border-radius: 50%;
+}
