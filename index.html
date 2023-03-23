@@ -10,7 +10,7 @@
 
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
-<body class="flex-column flex-center">
+<body class="body flex-column flex-center">
   <header class="flex-row">
     <img src="./assets/images/logo.svg" alt="" class="logo">
     <nav>
@@ -22,7 +22,7 @@
     </nav>
   </header>
   <main class="main flex-column">
-    <section class="section-1 flex-column text-center">
+    <section class="section-1 flex-column text-center flex-row-reverse">
       <img src="./assets/images/illustration-1.svg" alt="Ilustratio of two people using huge mails">
       <div class="text flex-column">
         <h1>All your files in one secure location, accessible anywhere.</h1>
@@ -31,25 +31,29 @@
           them wherever you need, share and collaborate with friends, family,
           and co-workers.
         </p>
-        <form action="post" class="flex-column">
-          <input type="email" name="" id="" placeholder="Enter your email.">
+        <form action="post" class="flex-column flex-row-desktop">
+          <div>
+            <input type="email" name="" id="" placeholder="Enter your email.">
+            <p class="error">Please check your email</p>
+          </div>
           <button type="submit">Get Started</button>
         </form>
       </div>
     </section>
     <div class="bg-curve"></div>
-    <section class="section-2 flex-column">
+    <section class="section-2 flex-column flex-row-reverse">
       <img src="./assets/images/illustration-2.svg" alt="Ilustration of three people with chat ballons">
-      <div class="text flex-column flex-center">
+      <div class="text flex-column flex-center flex-left">
         <h2 class="text-center">Stay productive, wherever you are</h2>
         <p>
           Never let location be an issue when accessing your files. Fylo has you 
           covered for all of your file storage needs.
-          
+        </p>
+        <p>
           Securely share files and folders with friends, family and colleagues for 
           live collaboration. No email attachments required! 
         </p>
-        <a class="flex-row flex-center" href="#">See how Fylo works 
+        <a class="flex-row flex-center flex-left" href="#">See how Fylo works 
           <img src="./assets/images/icon-arrow.svg" alt="">
         </a>
         <div class="testimonial flex-column">
@@ -70,7 +74,7 @@
         </div>
       </div>
     </section>
-    <section class="section-3 flex-column text-center">
+    <section class="section-3 flex-column text-center flex-row-desktop">
       <div class="flex-column">
         <h2>Get early access today</h2>
         <p>
@@ -80,14 +84,17 @@
         </p>
       </div>
       <form action="post">
-        <input type="email" name="" id="">
+        <div>
+          <input type="email" name="" id="" placeholder="email@example.com">
+          <p class="error">Please check your email</p>
+        </div>
         <button type="submit">Get Started For Free</button>
       </form>
     </section>
   </main>
   <footer class="footer flex-column">
       <img src="./assets/images/logo.svg" alt="" class="logo">
-      <div class="footer-container flex-column">
+      <div class="footer-container flex-column flex-row-desktop">
         <div class="contact flex-column">
           <div class="flex-row">
             <img src="./assets/images/icon-phone.svg" alt="">
@@ -98,7 +105,7 @@
             <p>example@fylo.com</p>
           </div>
         </div>
-        <div class="anchors flex-column">
+        <div class="anchors flex-column flex-row-desktop">
           <div class="flex-column">
             <a href="#">About Us</a>
             <a href="#">Jobs</a>

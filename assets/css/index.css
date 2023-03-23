@@ -4,9 +4,14 @@ h1 {
     line-height: 1.5;
 }
 h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
+.error {
+    display: none;
 
+    font-size: .8rem;
+    color: red;
+}
 /* header */
 header {
     width: 100%;
@@ -49,7 +54,7 @@ input {
 }
 .section-2 a {
     width: fit-content;
-    margin: 2rem auto;
+    margin: 2rem 0;
     padding-bottom: .5rem;
 
     color: hsl(170, 45%, 43%);
@@ -82,9 +87,19 @@ a img {
     background-color: hsl(238, 22%, 44%);
     color: hsl(240, 75%, 98%);
 }
+.section-3 input {
+    width: 80%;
+    margin-bottom: .5rem;
 
+    border-radius: .25rem;
+    border: none;
+}
+.section-3 button {
+    font-size: .6rem;
+}
 /* footer */
 .footer {
+    width: 100vw;
     padding: 4rem 3rem;
     gap: 2rem;
 
@@ -92,7 +107,7 @@ a img {
     color: hsl(240, 75%, 98%);
 }
 .footer .logo {
-    width: 50%;
+    width: 9rem;
     filter: contrast(0) brightness(1.8);
 }
 .footer-container {
@@ -112,4 +127,108 @@ a {
 
     border: 1px solid white;
     border-radius: 50%;
+}
+
+@media (min-width: 1000px) {
+    .flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+    .flex-row-desktop {
+        flex-direction: row;
+    }
+    .flex-left {
+        justify-content: left;
+        align-items: start;
+    }
+    * {
+        text-align: left;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        white-space: pre-line;
+    }
+    header, section {
+        padding: 5rem;
+    }
+    .logo {
+        width: 10rem;
+    }
+    section img {
+        width: 45%;
+    }
+    .section-1 input {
+        width: 20rem;
+    }
+    .bg-curve {
+        height: 5rem;
+
+        background: url('/assets/images/bg-curve-desktop.svg');
+    }
+    .section-2 {
+        justify-content: space-between;
+    }
+    a img {
+        width: 1rem;
+        height: 1rem;
+    }
+    .testimonial {
+        width: fit-content;
+    }
+    .section-3 {
+        padding: 5rem;
+        gap: 10rem;
+    }
+    .section-3 input {
+        width: 30rem;
+        padding: 1rem;
+    }
+    .section-3 button {
+        width: fit-content;
+        padding: 1rem 1.5rem;
+        font-size: .8rem;
+    }
+    .footer {
+        width: 100vw;
+        padding: 5rem;
+    }
+    .footer-container {
+        justify-content: space-between;
+    }
+    .anchors {
+        width: 30%;
+        justify-content: space-between;
+    }
+    .social-media {
+        align-self: self-start;
+    }
+    .attribution {
+        white-space: normal;
+    }
+    /* hover */
+    button:hover {
+        cursor: pointer;
+        filter: brightness(1.5);
+    }
+    .footer a:hover {
+        color: hsl(224, 93%, 58%);
+    }
+    i:hover {
+        color: hsl(224, 93%, 58%);
+        border-color: hsl(224, 93%, 58%);
+    }
+    /* invalid */
+    input:invalid {
+        border: 1px solid red;
+    }
+    input:invalid  + .error {
+        display: block;
+    }
+    .section-3 input:invalid  + .error {
+        color: white;
+    }
 }
